@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Geeks React</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      #formSearch {
+        padding: 8px 16px 8px 40px;
+      }
+
+      .form-control {
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      .form-control:focus {
+        border-color: #724ffe;
+        box-shadow: 0 0 5px #724ffe;
+      }
+
+      .inputform:hover .searchinput {
+        border-color: #724ffe;
+        box-shadow: 0 0 5px rgba(123, 91, 236, 0.5);
+      }
+
+      .searchinput {
+        border: 1px solid #272829;
+        border-radius: 4px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+      .p-2 {
+    padding: .5rem !important;
+}
+
+        .dropdown-toggle::after {
+            content: '\25BE';
+            margin-left: 0.5em;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .dropdown-toggle[aria-expanded="true"]::after {
+            transform: rotate(180deg);
+        }
+
+  
+
+.navbar-icons .btn-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+     
+    </style>
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 p-2 fixed-top" style="height: 56.39px; padding: 8px;">
+      <div class="container-fluid" style="padding: 0 0 0 8px; height: 40.39px;">
+        <!-- Navbar Brand (Left Side) -->
+        <a class="navbar-brand" href="#" style="height: 36.09px; margin: 0 16px 0 0; padding: 2px 0;     padding-top: 0;">
+          <img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg"
+            alt="Geeks react UI" class="img-fluid" />
+        </a>
+    
+        <!-- Burger Menu Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: white;">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- Browse Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 83.23px;">
+                Browse
+                <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle linksnav" href="#">Web Development</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item linksnav" href="#">Bootstrap</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">React</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">GraphQL</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">Gatsby</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">Grunt</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">Svelte</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">Meteor</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">HTML5</a></li>
+                    <li><a class="dropdown-item linksnav" href="#">Angular</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Design</a></li>
+                <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                <li><a class="dropdown-item" href="#">IT Software</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">Life Style</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+
+                <li><a class="dropdown-item" href="#">Photography</a></li>
+              </ul>
+            </li>
+    
+            <!-- Landings Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 94.3px;">
+                Landings
+                <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="text-muted ms-3">Landing</li>
+                <li><a class="dropdown-item" href="#">Mentor</a></li>
+                <li><a class="dropdown-item" href="#">Education</a></li>
+                <li><a class="dropdown-item" href="#">Home Academy</a></li>
+                <li><a class="dropdown-item" href="#">Courses</a></li>
+                <li><a class="dropdown-item" href="#">Lead Course</a></li>
+                <li><a class="dropdown-item" href="#">Request Access</a></li>
+                <li><a class="dropdown-item" href="#">SaaS</a></li>
+                <li><a class="dropdown-item" href="#">Job Listing</a></li>
+              </ul>
+            </li>
+    
+            <!-- Pages Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 74.5px;">
+                Pages
+                <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Courses</a></li>
+                <li><a class="dropdown-item" href="#">Paths</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Career</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                <li><a class="dropdown-item" href="#">Mentor</a></li>
+                <li><a class="dropdown-item" href="#">Job</a></li>
+                <li><a class="dropdown-item" href="#">Specialty</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                <li><a class="dropdown-item" href="#">Compare Plan</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+              </ul>
+            </li>
+    
+            <!-- Accounts Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 96.66px;">
+                Accounts
+                <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="text-muted ms-3" style="font-size: 11px; font-family: 'Inter', sans-serif;">Accounts</li>
+                <li><a class="dropdown-item" href="#">Instructor</a></li>
+                <li><a class="dropdown-item" href="#">Students</a></li>
+                <li><a class="dropdown-item" href="#">Admin</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+              </ul>
+            </li>
+    
+            <!-- More Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" style="height: 25px; width: 35.39px;">
+                <i class="fa-solid fa-ellipsis" style="font-size: 14px;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Design</a></li>
+                <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                <li><a class="dropdown-item" href="#">IT Software</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">Life Style</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+                <li><a class="dropdown-item" href="#">Photography</a></li>
+              </ul>
+            </li>
+          </ul>
+    
+          <!-- Search Bar -->
+          <form class="d-flex align-items-center ms-lg-3 mt-lg-0 mt-3 navbar-search">
+            <span class="position-absolute ps-3 search-icon" style="height: 22.39px; font-size: 14px;">
+              <img src="../images/images/search.svg" height="14px" style=" position: relative;
+              bottom: 3px;" alt="">
+              <!-- <i class="fas fa-search" style="font-size: 12px;
+              position: relative;
+              bottom: 1px;
+              left: 1px;;"></i> -->
+            </span>
+            <input placeholder="Search Courses" type="search" id="formSearch" class="ps-6 form-control" style="height: 40.39px; width: 249px; padding: 8px 16px 8px 40px; border: 1px solid #cbd5e1;" />
+          </form>
+    
+          <!-- Right Corner Icons -->
+          <div class="navbar-nav navbar-right-wrap ms-auto d-flex justify-content-center nav-top-wrap navbar-icons">
+            <!-- Theme Toggle Icon -->
+            <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
+              <i class="fas fa-adjust"></i>
+            </a>
+    
+            <!-- Notifications Icon -->
+            <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
+              <i class="fas fa-bell"></i>
+            </a>
+    
+            <!-- User Profile Icon -->
+            <a class="btn btn-light btn-icon rounded-circle" href="#">
+              <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg " alt="Profile" class="profile-img" style="border-radius: 50%; width: 40px;height: 40px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+    <section class="hero-section">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between g-0 row">
+          <div
+            class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center pe-lg-5"
+          >
+            <div class="py-5 py-lg-0" style="width: 468px">
+              <h1
+                class="text-white display-6 fw-bold mt-0"
+                style="
+                  font-size: 40px;
+                  line-height: 1.2;
+                  font-family: 'Inter', sans-serif;
+                "
+              >
+                Welcome to Geeks UI Learning Application
+              </h1>
+
+              <p
+                class="text-white-50 mb-4 lead"
+                style="
+                  font-size: 20px;
+                  font-weight: 500;
+                  letter-spacing: -0.03rem;
+                  font-family: 'Inter', sans-serif;
+                  width: 468px;
+                  height: 96px;
+                  line-height: 1.6;
+                "
+              >
+                Hand-picked Instructor and expertly crafted courses, designed
+                for the modern students and entrepreneur.
+              </p>
+              <!-- Buttons -->
+              <div class="d-flex gap-1">
+                <a
+                  class="btn btn-dark"
+                  href="#"
+                  style="
+                    font-weight: 600;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    padding: 8px 16px;
+                    width: 144.66px;
+                    letter-spacing: 0rem;
+                  "
+                  >Browse Courses</a
+                >
+                <a
+                  class="btn bg-white"
+                  href=" #"
+                  style="
+                    font-weight: 600;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    padding: 8px 16px;
+                    width: 164.34px;
+                    letter-spacing: 0rem;
+                  "
+                >
+                  Are You Instructor?
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section (Image) -->
+          <div class="text-lg-end text-center col-xl-6 col-lg-6 col-md-12">
+            <img src="../images/images/gfg1.png" alt="" class="img-fluid h-100 end-0" />
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="bg-white py-4 shadow-sm">
+      <div class="container">
+        <div class="align-items-center g-0 row">
+          <!-- First Icon -->
+          <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+            <div class="d-flex align-items-center">
+              <span
+                class="icon icon-shape icon-lg rounded-circle text-center d-flex justify-content-center align-items-center"
+                style="font-size: 1.25rem; color: #d68f35"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="rgba(194, 129, 53,1)"
+                >
+                  <path
+                    d="M216-192q-29 0-50.5-21.5T144-264v-432q0-29.7 21.5-50.85Q187-768 216-768h432q29.7 0 50.85 21.15Q720-725.7 720-696v168l144-144v384L720-432v168q0 29-21.15 50.5T648-192H216Zm0-72h432v-432H216v432Zm0 0v-432 432Z"
+                  />
+                            
+                </svg>
+              </span>
+              <div class="ms-3">
+                <h4
+                  class="mb-0 fw-semi-bold"
+                  style="
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    color: #1e293b;
+                    line-height: 1.5;
+                  "
+                >
+                  30,000 online courses
+                </h4>
+                <p
+                  class="mb-0"
+                  style="
+                    font-size: 14px;
+                    font-family: 'Inter', sans-serif;
+                    color: #64748b;
+                  "
+                >
+                  Enjoy a variety of fresh topics
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Icon -->
+          <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+            <div class="d-flex align-items-center">
+              <span
+                class="icon icon-shape icon-lg rounded-circle text-center d-flex justify-content-center align-items-center"
+                style="font-size: 1.25rem; color: #d68f35"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="rgba(194, 129, 53,1)"
+                >
+                  <path
+                    d="M96-192v-92q0-25.78 12.5-47.39T143-366q54-32 114.5-49T384-432q66 0 126.5 17T625-366q22 13 34.5 34.61T672-284v92H96Zm648 0v-92q0-42-19.5-78T672-421q39 8 75.5 21.5T817-366q22 13 34.5 34.67Q864-309.65 864-284v92H744ZM384-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42Zm336-144q0 60-42 102t-102 42q-8 0-15-.5t-15-2.5q25-29 39.5-64.5T600-624q0-41-14.5-76.5T546-765q8-2 15-2.5t15-.5q60 0 102 42t42 102ZM168-264h432v-20q0-6.47-3.03-11.76-3.02-5.3-7.97-8.24-47-27-99-41.5T384-360q-54 0-106 14t-99 42q-4.95 2.83-7.98 7.91-3.02 5.09-3.02 12V-264Zm216.21-288Q414-552 435-573.21t21-51Q456-654 434.79-675t-51-21Q354-696 333-674.79t-21 51Q312-594 333.21-573t51 21ZM384-264Zm0-360Z"
+                  />
+                            
+                </svg>
+              </span>
+              <div class="ms-3">
+                <h4
+                  class="mb-0 fw-semi-bold"
+                  style="
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    color: #1e293b;
+                    line-height: 1.5;
+                  "
+                >
+                  Expert instruction
+                </h4>
+                <p
+                  class="mb-0"
+                  style="
+                    font-size: 14px;
+                    font-family: 'Inter', sans-serif;
+                    color: #64748b;
+                  "
+                >
+                  Find the right instructor for you
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Icon -->
+          <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+            <div class="d-flex align-items-center">
+              <span
+                class="icon icon-shape icon-lg rounded-circle text-center d-flex justify-content-center align-items-center"
+                style="font-size: 1.25rem; color: #d68f35"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  fill="rgba(194, 129, 53,1)"
+                >
+                  <path
+                    d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"
+                  />
+                            
+                </svg>
+              </span>
+              <div class="ms-3">
+                <h4
+                  class="mb-0 fw-semi-bold"
+                  style="
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    color: #1e293b;
+                    line-height: 1.5;
+                  "
+                >
+                  Lifetime access
+                </h4>
+                <p
+                  class="mb-0"
+                  style="
+                    font-size: 14px;
+                    font-family: 'Inter', sans-serif;
+                    color: #64748b;
+                  "
+                >
+                  Learn on your schedule
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative py-4">
+      <!-- Previous Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute start-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-left: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(-1)"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    
+      <!-- Next Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute end-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-right: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(1)"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    
+      <!-- Cards Container -->
+      <div class="container cardscont bg-gray position-relative px-lg-3 px-md-2 px-1" style="padding: 88px 0 0 !important;">
+        <h2 class="cardstop mb-4" style="font-family: 'Inter', sans-serif; font-weight: 600; color: #1e293b;">Recommended to you</h2>
+    
+        <div class="position-relative overflow-hidden px-lg-2 px-md-1 px-0">
+          <div
+            class="row flex-nowrap pb-3"
+            id="cardRow"
+            style="transition: transform 0.5s ease; margin-left: -12px; margin-right: -12px;"
+          >
+            <!-- Card 1 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg" class="card-img-top w-100" alt="GraphQL Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 4h 10m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    A Complete Beginner's Guide to JavaScript
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg" class="card-img-top w-100" alt="Node.js Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg" class="card-img-top w-100" alt="Laravel Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom Buttons for Mobile -->
+      <div class="d-flex justify-content-center gap-3 my-3 d-lg-none">
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(-1)"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(1)"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="position-relative py-4">
+      <!-- Previous Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute start-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-left: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(-1)"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    
+      <!-- Next Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute end-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-right: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(1)"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    
+      <!-- Cards Container -->
+      <div class="container cardscont bg-gray position-relative px-lg-3 px-md-2 px-1" style="padding: 88px 0 0 !important;">
+        <h2 class="cardstop mb-4" style="font-family: 'Inter', sans-serif; font-weight: 600; color: #1e293b;">Most Popular</h2>
+    
+        <div class="position-relative overflow-hidden px-lg-2 px-md-1 px-0">
+          <div
+            class="row flex-nowrap pb-3"
+            id="cardRow"
+            style="transition: transform 0.5s ease; margin-left: -12px; margin-right: -12px;"
+          >
+            <!-- Card 1 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg" class="card-img-top w-100" alt="GraphQL Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 4h 10m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    A Complete Beginner's Guide to JavaScript
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg" class="card-img-top w-100" alt="Node.js Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg" class="card-img-top w-100" alt="Laravel Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through " style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom Buttons for Mobile -->
+      <div class="d-flex justify-content-center gap-3 my-3 d-lg-none">
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(-1)"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(1)"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="position-relative py-4">
+      <!-- Previous Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute start-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-left: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(-1)"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    
+      <!-- Next Button - Desktop -->
+      <button
+        class="btn btn-light position-absolute end-0 top-50 translate-middle-y p-3 rounded-circle shadow-sm d-none d-lg-flex align-items-center justify-content-center"
+        style="z-index: 1; margin-right: 20px; width: 50px; height: 50px"
+        onclick="scrollCards(1)"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    
+      <!-- Cards Container -->
+      <div class="container cardscont bg-gray position-relative px-lg-3 px-md-2 px-1" style="padding: 88px 0 0 !important;">
+        <h2 class="cardstop mb-4" style="font-family: 'Inter', sans-serif; font-weight: 600; color: #1e293b;">Trending</h2>
+    
+        <div class="position-relative overflow-hidden px-lg-2 px-md-1 px-0">
+          <div
+            class="row flex-nowrap pb-3"
+            id="cardRow"
+            style="transition: transform 0.5s ease; margin-left: -12px; margin-right: -12px;"
+          >
+            <!-- Card 1 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg" class="card-img-top w-100" alt="GraphQL Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 4h 10m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    A Complete Beginner's Guide to JavaScript
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg" class="card-img-top w-100" alt="Node.js Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg" class="card-img-top w-100" alt="Laravel Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through " style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10 px-lg-3 px-md-2 px-2">
+              <div class="card border-0 h-100">
+                <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg" class="card-img-top w-100" alt="JavaScript Logo" style="object-fit: cover;" />
+                
+                <div class="form-body" style="padding: 24px;">
+                  <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                    GraphQL: Introduction to GraphQL for Beginners
+                  </h3>
+                  <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                    <i class="fas fa-clock"></i> 2h 40m &nbsp;
+                    <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
+                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                  </div>
+                  <div class="mb-2" style="margin: 16px 0 0 0 !important;">
+                    <span class="price fw-bold" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #1e293b;">$700</span>
+                    <span class="original-price text-decoration-line-through" style="font-family: 'Inter', sans-serif; font-size: 12px; color: #64748b;">$650</span>
+                  </div>
+                </div>
+        
+                <div class="form-footer" style="padding: 16px 24px; border-top: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
+                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                        Brooklyn Simmons
+                      </span>
+                    </div>
+                    <i class="fa-solid fa-bookmark" style="color: #64748b;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom Buttons for Mobile -->
+      <div class="d-flex justify-content-center gap-3 my-3 d-lg-none">
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(-1)"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          class="btn btn-light p-3 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px"
+          onclick="scrollCards(1)"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer text-black-50" style="margin-top: 80px;" >
+      <div class="container" style="border-top: 1px solid #e2e8f0; ">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0" style="font-size: 14px; font-family: 'Inter', sans-serif;">© 2024 Geeks. All Rights Reserved.</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px; font-family: 'Inter', sans-serif;"
+              >Privacy</a
+            >
+            <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px; font-family: 'Inter', sans-serif;"
+              >Terms</a
+            >
+            <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px; font-family: 'Inter', sans-serif;"
+              >Feedback</a
+            >
+            <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px; font-family: 'Inter', sans-serif;"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="btn-scroll-top" id="scrollTopBtn">
+      <svg
+        class="progress-square svg-content"
+        width="100%"
+        height="100%"
+        viewBox="0 0 40 40"
+      >
+        <path
+          id="progressPath"
+          d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"
+          stroke-dasharray="139.989"
+          stroke-dashoffset="139.989"
+        ></path>
+      </svg>
+    </div>
+
+    <script>
+      let currentIndex = 0;
+
+      function scrollCards(direction) {
+        const cardRow = document.getElementById("cardRow");
+        const cardWidth = cardRow.children[0].offsetWidth; // Width of one card
+        const totalCards = cardRow.children.length;
+        const maxIndex = totalCards - 4; // Maximum index to scroll to
+
+        currentIndex += direction;
+
+        // Ensure currentIndex stays within bounds
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+        // Scroll to the current card
+        cardRow.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      }
+
+      window.addEventListener("scroll", function () {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        const progressPath = document.getElementById("progressPath");
+
+        const scrollHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        const progress = (scrollTop / scrollHeight) * 139.989; // Update stroke-dashoffset
+
+        progressPath.style.strokeDashoffset = 139.989 - progress;
+
+        // Show/hide the button based on scroll position
+        if (scrollTop > 100) {
+          scrollTopBtn.classList.add("active");
+        } else {
+          scrollTopBtn.classList.remove("active");
+        }
+      });
+
+      // Scroll to top on button click
+      document
+        .getElementById("scrollTopBtn")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }); //
+    </script>
+  </body>
+</html>
