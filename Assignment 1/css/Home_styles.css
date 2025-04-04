@@ -6,6 +6,13 @@ body {
     background-color: #f1f5f9 !important;
 }
 
+.navbar-icons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    order: 2;
+  }
+
 #formSearch{
     padding: 8px 16px 8px 40px;
   }
@@ -190,11 +197,7 @@ Adjust search icon size
     height: 14px; /* Set icon height */
   }
   
-  /* Adjust input placeholder font size */
-  .navbar-search input::placeholder {
-    font-size: 14px; /* Set placeholder font size */
-    color: #6c757d; /* Optional: Adjust placeholder color */
-  }
+
   /* Ensure the three dots icon is visible */
   .nav-item.dropdown .bi-three-dots {
     font-size: 18px; /* Adjust size as needed */
@@ -432,6 +435,8 @@ form input{
 .fs-5 {
     font-size: 1.25rem !important;
 }
+
+
 .fs-4 {
     font-size: 1rem !important;
 }
@@ -576,7 +581,7 @@ form input{
 .nav-link {
     background: none;
     border: 0;
-    color: var(--geeks-nav-link-color);
+    color: #724ffe;
     display: block;
     font-size: var(--geeks-nav-link-font-size);
     font-weight: var(--geeks-nav-link-font-weight);

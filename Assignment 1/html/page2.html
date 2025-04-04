@@ -22,30 +22,305 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+    <style>
+        /* Custom CSS classes to replace inline styles */
+     
+        .navbar-brand-img {
+            margin: 0 16px 0 0;
+            
+        }
+
+        /* Remove blue background and border on focus/active */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Remove blue outline on focus */
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Remove default Bootstrap accordion button styles */
+.accordion-button {
+  background-color: transparent !important;
+  border: none !important;
+}
+        
+        .btn-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        .nav-link-custom {
+            height: 32.39px;
+            font-weight: 500;
+            padding: .3125rem .35rem;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;
+        }
+        .browse-link {
+            width: 83.23px;
+        }
+        .landings-link {
+            width: 94.3px;
+        }
+        .pages-link {
+            width: 74.5px;
+        }
+        .accounts-link {
+            width: 96.66px;
+        }
+        .more-link {
+            height: 25px;
+            width: 35.39px;
+        }
+        .search-icon {
+            height: 22.39px;
+        }
+        .search-input {
+            height: 40.39px;
+            width: 249px;
+            padding: 8px 16px 8px 40px;
+            border: 1px solid #cbd5e1;
+        }
+        .hero-section {
+            background-color: #724ffe;
+            padding-top: -5px !important;
+        }
+        .hero-title {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: .5rem;
+            margin-top: 0;
+            font-weight: 600;
+            letter-spacing: -.05rem;
+        }
+        .hero-text {
+            height: 95px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: -.03rem;
+            line-height: 1.6;
+        }
+        .hero-meta {
+            height: 23.36px;
+            font-size: 14px;
+            padding-top: 36px;
+            padding-bottom: 10px;
+        }
+        .bookmark-link {
+            
+            font-size: 14px;
+        }
+        .star-rating {
+            height: 17px;
+            transform: translateY(3px);
+        }
+        .star-icon {
+            width: 14px;
+            height: 14px;
+        }
+        .intermediate-icon {
+            height: 21px;
+        }
+        .borderaccard {
+            border: none;
+        }
+        .accordion-button-custom {
+            font-size: 16px;
+            padding: 16px 0 14px 0;
+            font-weight: 600;
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .accordion-body-custom {
+            padding-top: 11px !important;
+        }
+        .lesson-icon {
+            height: 32px;
+            width: 32px;
+            margin: 0 4px 0 0 !important;
+        }
+        .lesson-text {
+            font-size: 14px !important;
+            color: #1E293B;
+        }
+        .course-card {
+            border: 0;
+            box-shadow: 0 1px 3px #11182717;
+        }
+        .course-img-container {
+            height: 202px;
+        }
+        .course-price {
+            font-size: 24px;
+            margin: 0 8px 8px 0 !important;
+            letter-spacing: -.022rem !important;
+        }
+        .original-price {
+            font-size: 16px !important;
+            margin-left: -7px;
+        }
+        .course-btn {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.6;
+            padding: 8px 16px;
+            height: 40.39px;
+        }
+        .included-item {
+            padding: 0.8rem;
+            font-size: 14px !important;
+        }
+        .included-icon {
+            margin-left: 8px;
+            font-size: 14px !important;
+        }
+        .instructor-img {
+            height: 80px;
+            width: 80px;
+        }
+        .instructor-name {
+            font-size: 16px;
+            font-family: 'Inter',sans-serif;
+            line-height: 1.5;
+            font-weight: 600 !important;
+        }
+        .instructor-title {
+            font-size: 12px;
+            font-family: 'Inter',sans-serif;
+            color: #64748b;
+        }
+        .instructor-rating {
+            font-size: 12px;
+            font-family: 'Inter',sans-serif;
+            color: #64748b;
+        }
+        .instructor-stats {
+            font-size: 14px;
+            font-family: 'Inter',sans-serif;
+            line-height: 1.1;
+            font-weight: 600 !important;
+        }
+        .instructor-stat-label {
+            font-size: 14px;
+            font-family: 'Inter',sans-serif;
+            color: #64748b;
+        }
+        .instructor-bio {
+            font-size: 14px;
+            font-family: 'Inter',sans-serif;
+            color: #64748b;
+            line-height: 1.6;
+        }
+        .instructor-btn {
+            font-weight: 600 !important;
+            font-size: 12.25px;
+            padding: 4px 12px;
+            margin-top: 1px;
+        }
+        .section-title {
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: -.022rem;
+        }
+        .card-title-custom {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #1e293b;
+            letter-spacing: -.022rem;
+            font-weight: 600 !important;
+        }
+        .card-text-custom {
+            font-family: 'Inter', sans-serif;
+            color: #64748b;
+            font-size: 14px;
+        }
+        .rating-stars {
+            color: #ffc107;
+        }
+        .rating-value {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #ffc107;
+        }
+        .rating-count {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .footer-text {
+            font-size: 14px;
+            color: #475569 !important;
+            text-decoration: none;
+        }
+        .active-tab {
+            color: #724ffe;
+            border-bottom: 2px solid #724ffe;
+            padding: 16px 0;
+        }
+        .other-tab {
+            color: #64748b;
+            padding: 16px 0;
+        }
+    </style>
 </head>
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 p-2" style="height: 56.39px; padding: 8px;">
-        <div class="container-fluid" style="padding: 0 0 0 8px; height: 40.39px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 p-2" style="padding: 8px;">
+        <div class="container-fluid" style="padding: 0 0 0 8px;">
           <!-- Navbar Brand (Left Side) -->
-          <a class="navbar-brand" href="#" style="height: 36.09px; margin: 0 16px 0 0; padding: 2px 0;">
+          <a class="navbar-brand" href="#" style="padding-top: 3px;" >
             <img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg"
               alt="Geeks react UI" class="img-fluid" />
           </a>
       
-          <!-- Burger Menu Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <!-- Right Side Elements -->
+          <div class="d-flex order-lg-2">
+            <!-- Icons (visible on all screens) -->
+            <div class="d-flex align-items-center">
+              <!-- Theme Toggle Icon -->
+              <a class="btn btn-light btn-icon me-2" href="#" style="width: 40px; height: 40px; border-radius: 50%;">
+                <i class="fas fa-adjust"></i>
+              </a>
+        
+              <!-- Notifications Icon -->
+              <a class="btn btn-light btn-icon me-2" href="#" style="width: 40px; height: 40px; border-radius: 50%;">
+                <i class="fas fa-bell"></i>
+              </a>
+        
+              <!-- User Profile Icon -->
+              
+                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="Profile" 
+                     class="profile-img" style="border-radius: 50%; width: 40px; height: 40px;">
+            
+            </div>
+      
+            <!-- Burger Menu Button -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
       
           <!-- Collapsible Content -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: white;">
+          <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <!-- Browse Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 83.23px;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                   style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 83.23px;">
                   Browse
                   <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
                 </a>
@@ -77,7 +352,8 @@
       
               <!-- Landings Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 94.3px;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                   style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 94.3px;">
                   Landings
                   <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
                 </a>
@@ -96,7 +372,8 @@
       
               <!-- Pages Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 74.5px;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                   style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 74.5px;">
                   Pages
                   <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
                 </a>
@@ -122,7 +399,8 @@
       
               <!-- Accounts Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 96.66px;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                   style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 96.66px;">
                   Accounts
                   <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
                 </a>
@@ -143,7 +421,8 @@
       
               <!-- More Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" style="height: 25px; width: 35.39px;">
+                <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" 
+                   data-bs-toggle="dropdown" style="height: 25px; width: 35.39px;">
                   <i class="fa-solid fa-ellipsis" style="font-size: 14px;"></i>
                 </a>
                 <ul class="dropdown-menu">
@@ -162,88 +441,67 @@
             <!-- Search Bar -->
             <form class="d-flex align-items-center ms-lg-3 mt-lg-0 mt-3 navbar-search">
               <span class="position-absolute ps-3 search-icon" style="height: 22.39px;">
-                <i class="fas fa-search" style="font-size: 12px;
-                position: relative;
-                bottom: 1px;
-                left: 1px;;"></i>
+                <i class="fas fa-search" style="font-size: 12px; position: relative; bottom: 1px; left: 1px;"></i>
               </span>
-              <input placeholder="Search Courses" type="search" id="formSearch" class="ps-6 form-control" style="height: 40.39px; width: 249px; padding: 8px 16px 8px 40px; border: 1px solid #cbd5e1;" />
+              <input placeholder="Search Courses" type="search" id="formSearch" class="form-control" 
+                     style="height: 40.39px; width: 249px; padding: 8px 16px 8px 40px; border: 1px solid #cbd5e1;" />
             </form>
-      
-            <!-- Right Corner Icons -->
-            <div class="navbar-nav navbar-right-wrap ms-auto d-flex justify-content-center nav-top-wrap navbar-icons">
-              <!-- Theme Toggle Icon -->
-              <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
-                <i class="fas fa-adjust"></i>
-              </a>
-      
-              <!-- Notifications Icon -->
-              <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
-                <i class="fas fa-bell"></i>
-              </a>
-      
-              <!-- User Profile Icon -->
-              <a class="btn btn-light btn-icon rounded-circle" href="#">
-                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg " alt="Profile" class="profile-img" style="border-radius: 50%; width: 40px;height: 40px;">
-              </a>
-            </div>
           </div>
         </div>
       </nav>
-
     <!-- main screen -->
     <main>
         <!-- hero section -->
-        <section class="pt-lg-8 pb-lg-16 pt-8 pb-11" style="background-color: #724ffe; padding-top: -5px !important;">
+        <section class="pt-lg-8 pb-lg-16 pt-8 pb-11 hero-section">
             <div class="container">
                 <div class="d-flex align-items-center row">
                     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                         <div style="transform: translateY(-3px);">
-                            <h1 class="fw-semi-bold text-white display-4" style="font-size: 40px; line-height: 1.2; margin-bottom: .5rem; margin-top: 0;font-weight: 600; letter-spacing: -.05rem;">
+                            <h1 class="fw-semi-bold text-white display-4 hero-title">
                                 Getting Started with JavaScript
                             </h1>
-                            <p class="text-white mb-6 lead" style="height: 95px; font-size: 1.25rem; font-weight: 500; letter-spacing: -.03rem; line-height: 1.6;margin-bottom: 40px;"> <!-- Reduced height by 1px -->
+                            <p class="text-white lead hero-text">
                                 JavaScript is the popular programming language which powers web pages and web applications. This course will get you started coding in JavaScript.
                             </p>
-                            <div class="d-flex align-items-center" style="height: 23.36px; font-size: 14px;"> <!-- Reduced height by 1px -->
+                            <div class="d-flex align-items-center hero-meta" style="letter-spacing: 0;">
                                 <!-- Bookmark Icon -->
-                                <a href="#" class="text-decoration-none text-white Bookmark" style="height: 22.39px; font-size: 14px;">
-                                    <i class="fa-regular fa-bookmark me-2" style="font-size: 12px; width: 14px; height: 14px;"></i>Bookmark
+                                <a href="#" class="text-decoration-none text-white bookmark-link">
+                                    <i class="fa-regular fa-bookmark me-2" style="font-size: 12px; width: 14px; height: 14px; "></i>Bookmark
                                 </a>
                                 <!-- User Icon -->
-                                <span class="text-white ms-3" style="font-size: 14px; height: 22px;"> <!-- Reduced height by 1px -->
+                                <span class="text-white ms-3" style="font-size: 14px; height: 22px;" >
                                     <i class="fa-regular fa-user me-1" style="font-size: 12px; width: 14px; height: 14px;"></i>1200 Enrolled
                                 </span>
                                 <!-- Star Rating Icons -->
-                                <span class="ms-4 d-flex align-items-center" style="gap: 0;"> <!-- Added flex to remove space between stars -->
-                                    <span class="text-warning d-flex" style="height: 17px; transform: translateY(3px);">
+                                <span class="ms-4 d-flex align-items-center" style="gap: 0;">
+                                    <span class="text-warning d-flex star-rating">
                                         <!-- Star Icons -->
-                                        <svg viewBox="0 0 24 24" role="presentation" style="width: 14px; height: 14px;">
+                                        <svg viewBox="0 0 24 24" role="presentation" class="star-icon">
                                             <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor"></path>
                                         </svg>
-                                        <svg viewBox="0 0 24 24" role="presentation" style="width: 14px; height: 14px;">
+                                        <svg viewBox="0 0 24 24" role="presentation" class="star-icon">
                                             <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor"></path>
                                         </svg>
-                                        <svg viewBox="0 0 24 24" role="presentation" style="width: 14px; height: 14px;">
+                                        <svg viewBox="0 0 24 24" role="presentation" class="star-icon">
                                             <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor"></path>
                                         </svg>
-                                        <svg viewBox="0 0 24 24" role="presentation" style="width: 14px; height: 14px;">
+                                        <svg viewBox="0 0 24 24" role="presentation" class="star-icon">
                                             <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor"></path>
                                         </svg>
-                                        <svg viewBox="0 0 24 24" role="presentation" style="width: 14px; height: 14px;">
+                                        <svg viewBox="0 0 24 24" role="presentation" class="star-icon">
                                             <path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor"></path>
                                         </svg>
                                     </span>
                                     <span class="text-white ms-1" style="font-size: 14px;">(140)</span>
                                 </span>
                                 <!-- Intermediate Icon -->
-                                <span class="text-white ms-4 d-none d-md-block" style="font-size: 14px; height: 21px;"> <!-- Reduced height by 1px -->
+                                <span class="text-white ms-4 d-none d-md-block intermediate-icon">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="3" y="8" width="2" height="6" rx="1" fill="#DBD8E9"></rect>
                                         <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
                                         <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
                                     </svg>
-                                    <span class="align-middle " style="position: relative; bottom: 1px;"> Intermediate</span>
+                                    <span class="align-middle" style="position: relative; bottom: 1px; letter: spacing 1px;;"> Intermediate</span>
                                 </span>
                             </div>
                         </div>
@@ -256,40 +514,40 @@
         <section class="pb-10">
             <div class="container">
                 <div class="row">
-                    <div class="mt-n8 mb-4 mb-lg-0 col-lg-8 col-md-12 col-sm-12" style="height: 1007px;">
-                        <div class="card" style="border: none;">
+                    <div class="mt-n8 mb-4 mb-lg-0 col-lg-8 col-md-12 col-sm-12">
+                        <div class="card borderaccard">
                           <div class="borderaccard nav-lb-tab nav" role="tablist">
                             <div class="nav-item">
                                 <a href="" role="tab" data-rr-ui-event-key="contents"
                                    id="react-aria9827524677-:r1a:-tab-contents"
                                    aria-controls="react-aria9827524677-:r1a:-tabpane-contents" aria-selected="true"
-                                   class="mb-sm-3 mb-md-0 nav-link active small-text text" style="color: #64748b; border-bottom: 2px solid #724ffe; padding:16px 0;">Contents</a>
+                                   class="mb-sm-3 mb-md-0 nav-link active small-text active-tab">Contents</a>
                             </div>
                             <div class="nav-item">
                                 <a href="#description" role="tab" data-rr-ui-event-key="description"
                                    id="react-aria9827524677-:r1a:-tab-description"
                                    aria-controls="react-aria9827524677-:r1a:-tabpane-description"
                                    aria-selected="false" tabindex="-1"
-                                   class="mb-sm-3 mb-md-0 nav-link other-tab" style="color: #64748b; padding: 16px 0;">Description</a>
+                                   class="mb-sm-3 mb-md-0 nav-link other-tab">Description</a>
                             </div>
                             <div class="nav-item">
                                 <a href="#reviews" role="tab" data-rr-ui-event-key="reviews"
                                    id="react-aria9827524677-:r1a:-tab-reviews"
                                    aria-controls="react-aria9827524677-:r1a:-tabpane-reviews" aria-selected="false"
-                                   tabindex="-1" class="mb-sm-3 mb-md-0 nav-link other-tab" style="color: #64748b; padding:16px 0">Reviews</a>
+                                   tabindex="-1" class="mb-sm-3 mb-md-0 nav-link other-tab">Reviews</a>
                             </div>
                             <div class="nav-item">
                                 <a href="#transcript" role="tab" data-rr-ui-event-key="transcript"
                                    id="react-aria9827524677-:r1a:-tab-transcript"
                                    aria-controls="react-aria9827524677-:r1a:-tabpane-transcript"
                                    aria-selected="false" tabindex="-1"
-                                   class="mb-sm-3 mb-md-0 nav-link other-tab" style="color: #64748b; padding:16px 0;">Transcript</a>
+                                   class="mb-sm-3 mb-md-0 nav-link other-tab">Transcript</a>
                             </div>
                             <div class="nav-item">
                                 <a href="#faq" role="tab" data-rr-ui-event-key="faq"
                                    id="react-aria9827524677-:r1a:-tab-faq"
                                    aria-controls="react-aria9827524677-:r1a:-tabpane-faq" aria-selected="false"
-                                   tabindex="-1" class="mb-sm-3 mb-md-0 nav-link other-tab" style="color: #64748b; padding:16px 0;">FAQ</a>
+                                   tabindex="-1" class="mb-sm-3 mb-md-0 nav-link other-tab">FAQ</a>
                             </div>
                         </div>
                             <div class="p-0 card-body">
@@ -297,17 +555,16 @@
                                     <div role="tabpanel" id="react-aria9827524677-:r1a:-tabpane-contents"
                                         aria-labelledby="react-aria9827524677-:r1a:-tab-contents"
                                         class="fade pb-4 pt-3 px-4 tab-pane active show">
-                                        <div class="accordion" id="accordionExample" style="border: none;">
+                                        <div class="accordion" id="accordionExample">
                                             <!-- Accordion Item 1 -->
-                                            <div class="borderaccard accordion-item px-0 list-group-item">
+                                            <div class="borderaccard accordion-item px-0 list-group-item" >
                                                 <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button d-flex align-items-center text-inherit text-decoration-none h4 mb-0" 
+                                                    <button class="accordion-button d-flex align-items-center text-inherit text-decoration-none h4 mb-0 accordion-button-custom" style="background-color: transparent; border: none;" 
                                                             type="button" 
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#collapseOne" 
                                                             aria-expanded="true" 
-                                                            aria-controls="collapseOne"
-                                                            style="font-size: 16px; padding: 16px 0 14px 0; font-weight: 600; background-color: transparent; box-shadow: none;">
+                                                            aria-controls="collapseOne">
                                                         <div class="me-auto">Introduction to JavaScript</div>
                                                         <span class="chevron-arrow ms-4">
                                                             <i class="fe fe-chevron-down fs-4"></i>
@@ -316,17 +573,17 @@
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="padding: 0 0 12px 0;">
-                                                    <div class="accordion-body py-4" style="padding-top: 11px !important;">
+                                                    <div class="accordion-body py-4 accordion-body-custom">
                                                         <ul class="list-group list-group-flush">
                                                             <li class="px-0 py-1 border-0 list-group-item">
                                                                 <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
                                                                     <div class="text-truncate">
-                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2" style="height: 32px; width: 32px; margin: 0 4px 0 0 !important;">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
                                                                             <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
                                                                                 <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
                                                                             </svg> 
                                                                         </span>
-                                                                        <span class="fs-5" style="font-size: 14px !important; color: #1E293B;">Introduction</span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
                                                                     </div>
                                                                     <div class="text-truncate">
                                                                         <span style="color: #1E293B;">1m 7s</span>
@@ -336,12 +593,12 @@
                                                             <li class="px-0 py-1 border-0 list-group-item">
                                                                 <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
                                                                     <div class="text-truncate">
-                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2" style="height: 32px; width: 32px;  margin: 0 4px 0 0 !important;">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
                                                                             <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
                                                                                 <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
                                                                             </svg> 
                                                                         </span>
-                                                                        <span class="fs-5" style="font-size: 14px !important;color: #1E293B;">Installing Development Software</span>
+                                                                        <span class="fs-5 lesson-text">Installing Development Software</span>
                                                                     </div>
                                                                     <div class="text-truncate">
                                                                         <span style="color: #1E293B;">3m 11s</span>
@@ -351,12 +608,12 @@
                                                             <li class="px-0 py-1 border-0 list-group-item">
                                                                 <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
                                                                     <div class="text-truncate">
-                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2" style="height: 32px; width: 32px;  margin: 0 4px 0 0 !important;">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
                                                                             <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
                                                                                 <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
                                                                             </svg> 
                                                                         </span>
-                                                                        <span class="fs-5" style="font-size: 14px !important;color: #1E293B;">Hello World Project from GitHub</span>
+                                                                        <span class="fs-5 lesson-text">Hello World Project from GitHub</span>
                                                                     </div>
                                                                     <div class="text-truncate">
                                                                         <span style="color: #1E293B;">2m 33s</span>
@@ -366,10 +623,10 @@
                                                             <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
                                                                 <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
                                                                     <div class="text-truncate">
-                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2" style="height: 32px; width: 32px;  margin: 0 4px 0 0 !important;">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
                                                                             <i class="fe fe-lock fs-4"></i>
                                                                         </span>
-                                                                        <span class="fs-5" style="font-size: 14px !important;color: #1E293B;">Our Sample Website</span>
+                                                                        <span class="fs-5 lesson-text">Our Sample Website</span>
                                                                     </div>
                                                                     <div class="text-truncate">
                                                                         <span style="color: #1E293B;">2m 15s</span>
@@ -394,25 +651,120 @@
                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px !important;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 7s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px !important;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Adding JavaScript Code to a Web Page</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 39s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px !important;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Working with JavaScript Files</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">6m 18s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Formatting Code</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 18s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Detecting and Fixing Errors</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 14s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Case Sensitivity</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 48s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Commenting Code</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 24s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 14s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -433,25 +785,154 @@
                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 7s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">What Is a Variable?</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 11s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Declaring Variables</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 30s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Using let to Declare Variables</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 28s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text"> Naming Variables </span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 14s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Common Errors Using Variables</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 30s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Changing Variable Values</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 4s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Constants</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 15s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">The var Keyword</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 20s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 49s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -473,25 +954,171 @@
                                                     aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 52s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Clip Watched</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 27s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Conditionals Using if()</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 25s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Truthy and Falsy</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 30s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text"> if ... else</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 30s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Comparing === and ==
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 52s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">The Ternary Operator</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 47s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Block Scope Using let</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 21s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Looping with for()</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">5m 30s                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Looping with do ... while()</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 58s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 21s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -512,27 +1139,127 @@
                                                     aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 52s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Function Basics</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 46s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Function Expressions</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 32s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Passing Information to Functions</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 19s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Function Return Values</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 13s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Function Scope                                                                       </span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 20s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Using Functions to Modify Web Pages</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 42s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 3s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                         
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -551,27 +1278,157 @@
                                                     aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 48s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Object Properties</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 28s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Object Methods</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 3s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Passing Objects to Functions</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 27s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Standard Built-in Objects</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">6m 55s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">The Document Object Model (DOM)</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 29s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Styling DOM Elements</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 42s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Detecting Button Clicks</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 3s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Showing and Hiding DOM Elements</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 37s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 47s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -590,25 +1447,124 @@
                                                     aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 48s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Creating and Initializing Arrays</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 7s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Accessing Array Items</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 4s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Manipulating Arrays</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 3s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">slice() and splice()</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">5m 54s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Array Searching and Looping</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">7m 32s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Arrays in the DOM</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 11s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 28s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -629,25 +1585,109 @@
                                                     aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Introduction</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">1m 20s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Global Scope</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">4m 7s</span>
+                                                                    </div>
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Clip Watched</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;"> 3m 14s </span> 
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item disabled" tabindex="-1" aria-disabled="true">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <i class="fe fe-lock fs-4"></i>
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Function Scope</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">3m 45s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Var and Hoisting</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 21s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Undeclared Variables and Strict Mode</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;">2m 16s</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="icon-shape bg-light icon-sm rounded-circle me-2 lesson-icon">
+                                                                            <svg viewBox="0 0 24 24" role="presentation" style="width: 1.2rem; height: 1.2rem;">
+                                                                                <path d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                                                                            </svg> 
+                                                                        </span>
+                                                                        <span class="fs-5 lesson-text">Summary</span>
+                                                                    </div>
+                                                                    <div class="text-truncate">
+                                                                        <span style="color: #1E293B;"> 1m 33s </span> 
+                                                                    </div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -668,27 +1708,15 @@
                                                     aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-group list-group-flush">
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Introduction</span>
-                                                                    <span>1m 41s</span>
+                                                            <li class="px-0 py-1 border-0 list-group-item">
+                                                                <a href="#" class="d-flex justify-content-between align-items-center text-inherit text-decoration-none">
+                                                                    <div class="text-truncate">
+                                                                        <span class="fs-5 lesson-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse velit eos sunt ab inventore est tenetur blanditiis? Voluptas eius molestiae ad itaque tempora nobis minima eveniet aperiam molestias, maiores natus expedita dolores ea non possimus magnam corrupt i quas rem unde quo enim porro culpa! Quaerat veritatis veniam corrupti iusto.</span>
+                                                                    </div>
+                        
                                                                 </a>
                                                             </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Adding JavaScript Code to a Web Page</span>
-                                                                    <span>3m 39s</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="list-group-item disabled">
-                                                                <a href="#" class="d-flex justify-content-between align-items-center text-decoration-none"
-                                                                    style="font-size: 14px;">
-                                                                    <span>Working with JavaScript Files</span>
-                                                                    <span>6m 18s</span>
-                                                                </a>
-                                                            </li>
+                                                           
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -704,8 +1732,8 @@
                                         class="fade pb-4 p-4 tab-pane">
                                         <div class="mb-4">
                                             <h3 class="mb-2">Course Descriptions</h3>
-                                            <p>If you’re learning to program for the first time, or if you’re coming from a different language, this course, JavaScript: Getting Started, will give you the basics for coding in JavaScript. First, you'll discover the types of applications that can be built with JavaScript, and the platforms they’ll run on.</p>
-                                            <p>Next, you’ll explore the basics of the language, giving plenty of examples. Lastly, you’ll put your JavaScript knowledge to work and modify a modern, responsive web page. When you’re finished with this course, you’ll have the skills and knowledge in JavaScript to create simple programs, create simple web applications, and modify web pages.</p>
+                                            <p>If you're learning to program for the first time, or if you're coming from a different language, this course, JavaScript: Getting Started, will give you the basics for coding in JavaScript. First, you'll discover the types of applications that can be built with JavaScript, and the platforms they'll run on.</p>
+                                            <p>Next, you'll explore the basics of the language, giving plenty of examples. Lastly, you'll put your JavaScript knowledge to work and modify a modern, responsive web page. When you're finished with this course, you'll have the skills and knowledge in JavaScript to create simple programs, create simple web applications, and modify web pages.</p>
                                         </div>
                                     </div>
                                     <!-- Add other tab panes (Reviews, Transcript, FAQ) here -->
@@ -714,73 +1742,66 @@
                         </div>
                     </div>
                     <div class="mt-lg-n22 col-lg-4 col-md-12 col-sm-12">
-    <div class="mb-3 mb-4 card" style="border: 0;
-    box-shadow: 0 1px 3px #11182717;">
+    <div class="mb-3 mb-4 card course-card">
         <div class="p-1">
-            <div class="d-flex justify-content-center position-relative rounded py-10 border-white border rounded-3 bg-cover"
-                style="background: url(../images/images/javascript.jpg) center top / cover no-repeat,#f0f0f0; height: 202px;">
+            <div class="d-flex justify-content-center position-relative rounded py-10 border-white border rounded-3 bg-cover course-img-container"
+                style="background: url(../images/images/javascript.jpg) center top / cover no-repeat,#f0f0f0;">
                 <a class="popup-youtube icon-shape rounded-circle btn-play icon-xl text-decoration-none"
                     href="#">
                     <i class="fe fe-play"></i>
                 </a>
             </div>
         </div>
-        <div class="card-body p-4" style="height: 188.78px; padding: var(1.5rem) var(1.5rem);">
-            <div class="mb-3" style="font-size: 24px;">
-                <span class="text-dark fw-bold h2 me-1" style="font-size: 24px; margin: 0 8px 8px 0 !important; letter-spacing: -.022rem !important;">$600</span>
-                <del class="pl-0 ml-0 text-muted" style="font-size: 16px !important; margin-left:-7px ;">$750</del>
+        <div class="card-body p-4" style="height: 188.78px; padding: var(1.5rem) var(1.5rem); margin-top: 4px;" >
+            <div class="mb-3">
+                <span class="text-dark fw-bold h2 me-1 course-price" style="margin-right: 10.5px !important;">$600</span>
+                <del class="pl-0 ml-0 text-muted original-price">$750</del>
             </div>
-            <div class="d-grid" style="height: 88.78px;">
-                <a class="btn btn-primary mb-2" href="#" style=" font-size: 14px;font-weight: 600;line-height: 1.6;padding: 8px 16px;height: 40.39px;">Start Free Month</a>
-                <a class="btn btn-outline-primary" href="#" style=" font-size: 14px;font-weight: 600;line-height: 1.6;padding: 8px 16px;height: 40.39px;">Get Full Access</a>
+            <div class="d-grid" style="margin-top: 19px;">
+                <a class="btn btn-primary mb-2 course-btn" href="#">Start Free Month</a>
+                <a class="btn btn-outline-primary course-btn" href="#">Get Full Access</a>
             </div>
         </div>
     </div>
-    <div class="mb-4 card" style="border: 0;
-    box-shadow: 0 1px 3px #11182717;">
+    <div class="mb-4 card course-card">
         <div class="card-header" style="background-color: white; height: 57px;">
-            <h4 class="mb-0 medium-text fw-semibold p-2 transform:" style="height: 24px;
-    transform: translateY(2px);" >What’s included</h4>
+            <h4 class="mb-0 medium-text fw-semibold p-2" style="height: 24px;
+    transform: translateY(2px);" >What's included</h4>
         </div>
         <div class="p-0 card-body">
             <div class="list-group list-group-flush">
-                <div class="list-group-item text-muted" style="padding: 0.8rem; font-size: 14px !important;">
-                    <i class="fas fa-award me-2 align-middle text-success" style="    margin-left: 8px;
-font-size: 14px !important;"></i>
+                <div class="list-group-item text-muted included-item">
+                    <i class="fas fa-award me-2 align-middle text-success included-icon"></i>
                     12 hours video
                 </div>
-                <div class="list-group-item text-muted" style="padding: 0.8rem; font-size: 14px !important;">
-                    <i class="fas fa-award me-2 align-middle text-success" style="    margin-left: 8px;
-font-size: 14px !important;"></i> Certificate
+                <div class="list-group-item text-muted included-item">
+                    <i class="fas fa-award me-2 align-middle text-success included-icon"></i> Certificate
                 </div>
-                <div class="list-group-item text-muted" style="padding: 0.8rem; font-size: 14px !important;">
-                    <i class="fas fa-calendar align-middle me-2 text-info" style="    margin-left: 8px;
-font-size: 14px !important;"></i> 12 Article
+                <div class="list-group-item text-muted included-item">
+                    <i class="fas fa-calendar align-middle me-2 text-info included-icon"></i> 12 Article
                 </div>
-                <div class="list-group-item text-muted" style="padding: 0.8rem; font-size: 14px !important;">
-                    <i class="fas fa-video align-middle me-2 text-secondary" style="    margin-left: 8px;
-font-size: 14px !important;"></i> Watch Offline
+                <div class="list-group-item text-muted included-item">
+                    <i class="fas fa-video align-middle me-2 text-secondary included-icon"></i> Watch Offline
                 </div>
-                <div class="bg-transparent list-group-item text-muted" style="padding: 0.8rem; font-size: 14px !important;">
-                    <i class="fas fa-clock align-middle me-2 text-warning" style="    margin-left: 8px;
-font-size: 14px !important;"></i> Lifetime access
+                <div class="bg-transparent list-group-item text-muted included-item">
+                    <i class="fas fa-clock align-middle me-2 text-warning included-icon"></i> Lifetime access
                 </div>
             </div>
         </div>
     </div>
-    <div class="card" style="border: 0; box-shadow: 0 1px 3px #11182717;" >
-        <div class="card-body" style="padding: 24px;">
+    <div class="card course-card">
+        <div class="card-body" style="padding: 24px; padding-top: 20px;">
             <div class="d-flex align-items-center" style="height: 88.77px;">
                 <div class="position-relative">
-                    <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="rounded-circle avatar-sm" style="height: 80px; width: 80px;">
+                    <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="rounded-circle instructor-img">
                     <a class="position-absolute mt-2 ms-n3" data-bs-toggle="tooltip" data-placement="top" title="Verified" href="#">
                         <img src="https://geeks-react.netlify.app/static/media/checked-mark.002a8cea8655e2488125a9486bf876c4.svg" alt="" height="30" width="30">
                     </a>
                 </div>
                 <div class="ms-4">
-                    <h4 class="mb-0" style="font-size: 16px; font-family: 'Inter',sans-serif; line-height: 1.5; font-weight: 600 !important;">Jenny Wilson</h4>
-                    <p class="mb-1 " style="font-size: 12px; font-family: 'Inter',sans-serif; color: #64748b;line-height: 1.7; height: 38.38px;">Front-end Developer, Designer</p>
-                    <span class="" style="font-size: 12px; font-family: 'Inter',sans-serif; color: #64748b;">
+                    <h4 class="mb-0 instructor-name">Jenny Wilson</h4>
+                    <p class="mb-1 instructor-title">Front-end Developer, Designer</p>
+                    <span class="instructor-rating">
                         <span class="text-warning">4.5</span>
                         <span class="mdi mdi-star text-warning me-1"></span>Instructor Rating
                     </span>
@@ -788,35 +1809,26 @@ font-size: 14px !important;"></i> Lifetime access
             </div>
             <div class="border-top mt-3 border-bottom mb-3 g-0 row">
                 <div class="col">
-                    <div class="pe-1 ps-2 py-3" style="    margin-top: 0;
-                    padding-top: 19px !important;
-                    line-height: 1.5;
-                    padding-bottom: 17px !important;">
-                        <h5 class="mb-0" style="font-size: 14px; line-height: 1.1; font-weight: 600 !important;">11,604</h5>
-                        <span style="font-size: 14px; font-family: 'Inter',sans-serif; color: #64748b;">Students</span>
+                    <div class="pe-1 ps-2 py-3" style="margin-top: 0; line-height: 1.5;">
+                        <h5 class="mb-0 instructor-stats">11,604</h5>
+                        <span class="instructor-stat-label">Students</span>
                     </div>
                 </div>
                 <div class="border-start col">
-                    <div class="pe-1 ps-3 py-3" style="    margin-top: 0;
-                    padding-top: 19px !important;
-                    line-height: 1.5;
-                    padding-bottom: 17px !important;">
-                        <h5 class="mb-0"  style="font-size: 14px; font-family: 'Inter',sans-serif;line-height: 1.1; font-weight: 600 !important;">32</h5>
-                        <span  style="font-size: 14px; font-family: 'Inter',sans-serif; color: #64748b;">Courses</span>
+                    <div class="pe-1 ps-3 py-3" style="margin-top: 0; line-height: 1.5;">
+                        <h5 class="mb-0 instructor-stats">32</h5>
+                        <span class="instructor-stat-label">Courses</span>
                     </div>
                 </div>
                 <div class="border-start col">
-                    <div class="pe-1 ps-3 py-3" style="    margin-top: 0;
-                    padding-top: 19px !important;
-                    line-height: 1.5;
-                    padding-bottom: 17px !important;">
-                        <h5 class="mb-0"  style="font-size: 14px; font-family: 'Inter',sans-serif; line-height: 1.1; font-weight: 600 !important;">12,230</h5>
-                        <span  style="font-size: 14px; font-family: 'Inter',sans-serif; color: #64748b;">Reviews</span>
+                    <div class="pe-1 ps-3 py-3" style="margin-top: 0; line-height: 1.5;">
+                        <h5 class="mb-0 instructor-stats">12,230</h5>
+                        <span class="instructor-stat-label">Reviews</span>
                     </div>
                 </div>
             </div>
-            <p  style="font-size: 14px; font-family: 'Inter',sans-serif; color: #64748b; line-height: 1.6;">I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident at Figma explored the city of the future and how new technologies.</p>
-            <a class="btn btn-outline-secondary btn-sm" href="#" style="font-weight: 600 !important;font-size: 12.25px;padding: 4px 12px;    margin-top: 1px; ">View Details</a>
+            <p class="instructor-bio">I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident at Figma explored the city of the future and how new technologies.</p>
+            <a class="btn btn-outline-secondary btn-sm instructor-btn" href="#">View Details</a>
         </div>
     </div>
 </div>
@@ -824,8 +1836,7 @@ font-size: 14px !important;"></i> Lifetime access
                 <div class="pt-12 pb-3" style="padding: 88px 0 16px;">
                     <div class="d-md-flex align-items-center mb-4 row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="mb-0" style="font-weight: 600;
-    line-height: 1.5; letter-spacing: -.022rem;">Related Courses</h2>
+                            <h2 class="mb-0 section-title">Related Courses</h2>
                         </div>
                     </div>
                     <div class="container cardscont bg-gray position-relative" style="padding: 0;"> 
@@ -839,19 +1850,19 @@ font-size: 14px !important;"></i> Lifetime access
                                         <!-- Card Body -->
                                         <div class="form-body" style="padding: 24px;">
                                             <!-- Card Heading -->
-                                            <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif; line-height: 1.5; color: #1e293b; letter-spacing: -.022rem; font-weight: 600 !important;">
+                                            <h3 class="card-title fs-6 fw-bold text-dark card-title-custom">
                                                 A Complete Beginner's Guide to JavaScript
                                             </h3>
                                             <!-- Card Paragraph -->
-                                            <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                                            <p class="card-text text-secondary mb-3 card-text-custom">
                                                 <i class="fas fa-clock"></i> 2h 40m &nbsp;
-                                                <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                                                <i class="fas fa-signal" style="margin-left: 8px;font-size: 12px;"></i> Advance
                                             </p>
                                             <!-- Rating -->
                                             <div class="d-flex align-items-center mb-2" style="margin:0 0 32px !important;">
-                                                <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                                                <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
-                                                <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                                                <span class="rating me-2 rating-stars">★★★☆☆</span>
+                                                <span class="rating me-1 rating-value">2.5</span>
+                                                <span class="rating-count">(1500)</span>
                                             </div>
                                         </div>
                                 
@@ -861,10 +1872,9 @@ font-size: 14px !important;"></i> Lifetime access
                                                 <!-- Instructor Info -->
                                                 <div class="d-flex align-items-center">
                                                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
-                                                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
-                                                        Brooklyn Simmons
-                                                    </span>
                                                 </div>
+                                                <div class="col ms-2 col" style="color: #64748b; font-size: 14px;"><span>
+                                                    Jenny Wilson</span></div>
                                                 <!-- Bookmark Icon -->
                                                 <i class="fa-solid fa-bookmark"></i>
                                             </div>
@@ -880,19 +1890,19 @@ font-size: 14px !important;"></i> Lifetime access
                                         <!-- Card Body -->
                                         <div class="form-body" style="padding: 24px;">
                                             <!-- Card Heading -->
-                                            <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b ; letter-spacing: -.022rem; font-weight: 600 !important;">
+                                            <h3 class="card-title fs-6 fw-bold text-dark card-title-custom">
                                                 Applying JavaScript and using the console.
                                             </h3>
                                             <!-- Card Paragraph -->
-                                            <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                                            <p class="card-text text-secondary mb-3 card-text-custom">
                                                 <i class="fas fa-clock"></i> 2h 40m &nbsp;
-                                                <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                                                <i class="fas fa-signal" style="margin-left: 8px; font-size: 12px;"></i> Advance
                                             </p>
                                             <!-- Rating -->
                                             <div class="d-flex align-items-center mb-2" style="margin:0 0 32px !important;">
-                                                <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                                                <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
-                                                <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                                                <span class="rating me-2 rating-stars">★★★☆☆</span>
+                                                <span class="rating me-1 rating-value">2.5</span>
+                                                <span class="rating-count">(1500)</span>
                                             </div>
                                         </div>
                                 
@@ -902,10 +1912,9 @@ font-size: 14px !important;"></i> Lifetime access
                                                 <!-- Instructor Info -->
                                                 <div class="d-flex align-items-center">
                                                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
-                                                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
-                                                        Brooklyn Simmons
-                                                    </span>
+                                                    
                                                 </div>
+                                                <div class="col ms-2 col" style="color: #64748b; font-size: 14px;"><span>Guy Hawkins</span></div>
                                                 <!-- Bookmark Icon -->
                                                 <i class="fa-solid fa-bookmark"></i>
                                             </div>
@@ -921,19 +1930,19 @@ font-size: 14px !important;"></i> Lifetime access
                                         <!-- Card Body -->
                                         <div class="form-body" style="padding: 24px;">
                                             <!-- Card Heading -->
-                                            <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b ;letter-spacing: -.022rem; font-weight: 600 !important;">
+                                            <h3 class="card-title fs-6 fw-bold text-dark card-title-custom">
                                                 Creating a Custom Event in Javascript
                                             </h3>
                                             <!-- Card Paragraph -->
-                                            <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                                            <p class="card-text text-secondary mb-3 card-text-custom">
                                                 <i class="fas fa-clock"></i> 2h 40m &nbsp;
-                                                <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                                                <i class="fas fa-signal" style="margin-left: 8px; font-size: 12px;"></i> Advance
                                             </p>
                                             <!-- Rating -->
                                             <div class="d-flex align-items-center mb-2" style="margin: 0 0 32px !important;">
-                                                <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                                                <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
-                                                <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                                                <span class="rating me-2 rating-stars">★★★☆☆</span>
+                                                <span class="rating me-2 rating-value">2.5</span>
+                                                <span class="rating-count">(1500)</span>
                                             </div>
                                         </div>
                                 
@@ -943,10 +1952,9 @@ font-size: 14px !important;"></i> Lifetime access
                                                 <!-- Instructor Info -->
                                                 <div class="d-flex align-items-center">
                                                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
-                                                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
-                                                        Brooklyn Simmons
-                                                     </span>
                                                 </div>
+                                                <div class="col ms-2 col" style="color: #64748b; font-size: 14px;"><span>
+                                                    Ted Hawkins</span></div>
                                                 <!-- Bookmark Icon -->
                                                 <i class="fa-solid fa-bookmark"></i>
                                             </div>
@@ -962,19 +1970,19 @@ font-size: 14px !important;"></i> Lifetime access
                                         <!-- Card Body -->
                                         <div class="form-body" style="padding: 24px;">
                                             <!-- Card Heading -->
-                                            <h3 class="card-title fs-6 fw-bold text-dark" style="font-family: 'Inter', sans-serif;line-height: 1.5; color: #1e293b;letter-spacing: -.022rem; font-weight: 600 !important;">
+                                            <h3 class="card-title fs-6 fw-bold text-dark card-title-custom">
                                                 Morden JavaScript Beginner Tutorial - Simple
                                             </h3>
                                             <!-- Card Paragraph -->
-                                            <p class="card-text text-secondary mb-3" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px;">
+                                            <p class="card-text text-secondary mb-3 card-text-custom">
                                                 <i class="fas fa-clock"></i> 2h 40m &nbsp;
-                                                <i class="fas fa-signal" style="margin-left: 8px"></i> Advance
+                                                <i class="fas fa-signal" style="margin-left: 8px; font-size: 12px;"></i> Advance
                                             </p>
                                             <!-- Rating -->
                                             <div class="d-flex align-items-center mb-2" style="margin: 0 0 32px!important;">
-                                                <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                                                <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
-                                                <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
+                                                <span class="rating me-2 rating-stars">★★★☆☆</span>
+                                                <span class="rating me-1 rating-value">2.5</span>
+                                                <span class="rating-count">(1500)</span>
                                             </div>
                                         </div>
                                 
@@ -984,10 +1992,8 @@ font-size: 14px !important;"></i> Lifetime access
                                                 <!-- Instructor Info -->
                                                 <div class="d-flex align-items-center">
                                                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
-                                                    <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
-                                                        Brooklyn Simmons
-                                                    </span>
                                                 </div>
+                                                <div class="col ms-2 col" style="color: #64748b; font-size: 14px;"><span>Jenny Wilson</span></div>
                                                 <!-- Bookmark Icon -->
                                                 <i class="fa-solid fa-bookmark"></i>
                                             </div>
@@ -1001,32 +2007,33 @@ font-size: 14px !important;"></i> Lifetime access
             </div>
         </section>
 
-        <footer class="footer text-black-50 " >
+        <footer class="footer" >
           <div class="container" style="border-top: 1px solid #e2e8f0; ">
             <div class="row">
               <!-- Copyright -->
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <p class="mb-0" style="font-size: 14px;">© 2024 Geeks. All Rights Reserved.</p>
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" >
+                <p class="mb-0 footer-text">© 2024 Geeks. All Rights Reserved.</p>
               </div>
     
               <!-- Links -->
               <div class="col-md-6 text-center text-md-end">
-                <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px;"
+                <a href="#" class="me-3 footer-text"
                   >Privacy</a
                 >
-                <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px;"
+                <a href="#" class="me-3 footer-text"
                   >Terms</a
                 >
-                <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px;"
+                <a href="#" class="me-3 footer-text"
                   >Feedback</a
                 >
-                <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px;"
+                <a href="#" class="me-3 footer-text"
                   >Support</a
                 >
               </div>
             </div>
           </div>
         </footer>
+    
     
 
 

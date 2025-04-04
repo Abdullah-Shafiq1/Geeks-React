@@ -71,32 +71,63 @@
   align-items: center;
   justify-content: center;
 }
+
+.navbar-brand{
+  height: 36.09px;
+  margin: 0 16px 0 0; 
+  padding: 0;
+}
      
     </style>
   </head>
 
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 p-2 fixed-top" style="height: 56.39px; padding: 8px;">
-      <div class="container-fluid" style="padding: 0 0 0 8px; height: 40.39px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 p-2" style="padding: 8px;">
+      <div class="container-fluid" style="padding: 0 0 0 8px;">
         <!-- Navbar Brand (Left Side) -->
-        <a class="navbar-brand" href="#" style="height: 36.09px; margin: 0 16px 0 0; padding: 2px 0;     padding-top: 0;">
+        <a class="navbar-brand" href="#" style="padding-top: 2px;" >
           <img src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg"
             alt="Geeks react UI" class="img-fluid" />
         </a>
     
-        <!-- Burger Menu Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Right Side Elements -->
+        <div class="d-flex order-lg-2">
+          <!-- Icons (visible on all screens) -->
+          <div class="d-flex align-items-center">
+            <!-- Theme Toggle Icon -->
+            <a class="btn btn-light btn-icon me-2" href="#" style="width: 40px; height: 40px; border-radius: 50%;">
+              <i class="fas fa-adjust"></i>
+            </a>
+      
+            <!-- Notifications Icon -->
+            <a class="btn btn-light btn-icon me-2" href="#" style="width: 40px; height: 40px; border-radius: 50%;">
+              <i class="fas fa-bell"></i>
+            </a>
+      
+            <!-- User Profile Icon -->
+            
+              <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="Profile" 
+                   class="profile-img" style="border-radius: 50%; width: 40px; height: 40px;">
+          
+          </div>
+    
+          <!-- Burger Menu Button -->
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
     
         <!-- Collapsible Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: white;">
+        <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <!-- Browse Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 83.23px;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                 style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 83.23px;">
                 Browse
                 <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
               </a>
@@ -122,14 +153,14 @@
                 <li><a class="dropdown-item" href="#">Music</a></li>
                 <li><a class="dropdown-item" href="#">Life Style</a></li>
                 <li><a class="dropdown-item" href="#">Business</a></li>
-
                 <li><a class="dropdown-item" href="#">Photography</a></li>
               </ul>
             </li>
     
             <!-- Landings Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 94.3px;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                 style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 94.3px;">
                 Landings
                 <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
               </a>
@@ -148,7 +179,8 @@
     
             <!-- Pages Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 74.5px;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                 style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 74.5px;">
                 Pages
                 <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
               </a>
@@ -174,7 +206,8 @@
     
             <!-- Accounts Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 96.66px;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                 style="height: 32.39px; font-weight: 500; padding: .3125rem .35rem; font-size: 14px; font-family: 'Inter', sans-serif; color: #1E293B; width: 96.66px;">
                 Accounts
                 <i class="fa-solid fa-chevron-down" style="margin-left: 5px; font-size: 11px;"></i>
               </a>
@@ -195,7 +228,8 @@
     
             <!-- More Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" data-bs-toggle="dropdown" style="height: 25px; width: 35.39px;">
+              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center" href="#" role="button" 
+                 data-bs-toggle="dropdown" style="height: 25px; width: 35.39px;">
                 <i class="fa-solid fa-ellipsis" style="font-size: 14px;"></i>
               </a>
               <ul class="dropdown-menu">
@@ -213,34 +247,12 @@
     
           <!-- Search Bar -->
           <form class="d-flex align-items-center ms-lg-3 mt-lg-0 mt-3 navbar-search">
-            <span class="position-absolute ps-3 search-icon" style="height: 22.39px; font-size: 14px;">
-              <img src="../images/images/search.svg" height="14px" style=" position: relative;
-              bottom: 3px;" alt="">
-              <!-- <i class="fas fa-search" style="font-size: 12px;
-              position: relative;
-              bottom: 1px;
-              left: 1px;;"></i> -->
+            <span class="position-absolute ps-3 search-icon" style="height: 22.39px;">
+              <i class="fas fa-search" style="font-size: 12px; position: relative; bottom: 1px; left: 1px;"></i>
             </span>
-            <input placeholder="Search Courses" type="search" id="formSearch" class="ps-6 form-control" style="height: 40.39px; width: 249px; padding: 8px 16px 8px 40px; border: 1px solid #cbd5e1;" />
+            <input placeholder="Search Courses" type="search" id="formSearch" class="form-control" 
+                   style="height: 40.39px; width: 249px; padding: 8px 16px 8px 40px; border: 1px solid #cbd5e1;" />
           </form>
-    
-          <!-- Right Corner Icons -->
-          <div class="navbar-nav navbar-right-wrap ms-auto d-flex justify-content-center nav-top-wrap navbar-icons">
-            <!-- Theme Toggle Icon -->
-            <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
-              <i class="fas fa-adjust"></i>
-            </a>
-    
-            <!-- Notifications Icon -->
-            <a class="btn btn-light btn-icon rounded-circle me-2" href="#">
-              <i class="fas fa-bell"></i>
-            </a>
-    
-            <!-- User Profile Icon -->
-            <a class="btn btn-light btn-icon rounded-circle" href="#">
-              <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg " alt="Profile" class="profile-img" style="border-radius: 50%; width: 40px;height: 40px;">
-            </a>
-          </div>
         </div>
       </div>
     </nav>
@@ -252,9 +264,9 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-between g-0 row">
           <div
-            class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center pe-lg-5"
+            class="col-xl-5 col-lg-6 col-md-12 d-flex align-items-center pe-lg-5"
           >
-            <div class="py-5 py-lg-0" style="width: 468px">
+            <div class="py-5 py-lg-0">
               <h1
                 class="text-white display-6 fw-bold mt-0"
                 style="
@@ -273,7 +285,6 @@
                   font-weight: 500;
                   letter-spacing: -0.03rem;
                   font-family: 'Inter', sans-serif;
-                  width: 468px;
                   height: 96px;
                   line-height: 1.6;
                 "
@@ -282,7 +293,7 @@
                 for the modern students and entrepreneur.
               </p>
               <!-- Buttons -->
-              <div class="d-flex gap-1">
+              <div class="gap-1">
                 <a
                   class="btn btn-dark"
                   href="#"
@@ -291,7 +302,7 @@
                     font-family: 'Inter', sans-serif;
                     font-size: 14px;
                     padding: 8px 16px;
-                    width: 144.66px;
+                        height: 40.39px;
                     letter-spacing: 0rem;
                   "
                   >Browse Courses</a
@@ -303,8 +314,8 @@
                     font-weight: 600;
                     font-family: 'Inter', sans-serif;
                     font-size: 14px;
+                    height: 40.39px;
                     padding: 8px 16px;
-                    width: 164.34px;
                     letter-spacing: 0rem;
                   "
                 >
@@ -315,7 +326,7 @@
           </div>
 
           <!-- Right Section (Image) -->
-          <div class="text-lg-end text-center col-xl-6 col-lg-6 col-md-12">
+          <div class="text-lg-end text-center col-xl-7 col-lg-6 col-md-12">
             <img src="../images/images/gfg1.png" alt="" class="img-fluid h-100 end-0" />
           </div>
         </div>
@@ -510,7 +521,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -523,7 +534,7 @@
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Instructor" class="rounded-circle me-2" style="width: 24px; height: 24px;" />
-                      <span style="font-family: 'Inter', sans-serif; font-size: 14px; color: #64748b;">
+                      <span class="font-inter text-secondary fs-6 fs-md-7">
                         Brooklyn Simmons
                       </span>
                     </div>
@@ -548,7 +559,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -586,7 +597,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -624,7 +635,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -662,7 +673,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -751,7 +762,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -789,7 +800,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -827,7 +838,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -865,7 +876,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -903,7 +914,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -992,7 +1003,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -1030,7 +1041,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -1068,7 +1079,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -1106,7 +1117,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -1144,7 +1155,7 @@
                   </p>
                   <div class="d-flex align-items-center">
                     <span class="rating me-2" style="color: #ffc107;">★★★☆☆</span>
-                    <span class="rating" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
+                    <span class="rating me-1" style="font-family: 'Inter', sans-serif; font-size: 14px;">2.5</span>
                     <span style="font-family: 'Inter', sans-serif; font-size: 12px;">(1500)</span>
                   </div>
                   <div class="mb-2" style="margin: 16px 0 0 0 !important;">
@@ -1189,26 +1200,26 @@
       </div>
     </section>
 
-    <footer class="footer text-black-50" style="margin-top: 80px;" >
+    <footer class="footer" >
       <div class="container" style="border-top: 1px solid #e2e8f0; ">
         <div class="row">
           <!-- Copyright -->
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <p class="mb-0" style="font-size: 14px; font-family: 'Inter', sans-serif;">© 2024 Geeks. All Rights Reserved.</p>
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" >
+            <p class="mb-0" style="font-size: 14px; color: #475569 !important;">© 2024 Geeks. All Rights Reserved.</p>
           </div>
 
           <!-- Links -->
           <div class="col-md-6 text-center text-md-end">
-            <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px; font-family: 'Inter', sans-serif;"
+            <a href="#" class="me-3" style="text-decoration: none ; font-size: 14px; color: #475569 !important;"
               >Privacy</a
             >
-            <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px; font-family: 'Inter', sans-serif;"
+            <a href="#" class="me-3" style="text-decoration: none ;font-size: 14px; color: #475569 !important;"
               >Terms</a
             >
-            <a href="#" class="text-black-50 me-3" style="text-decoration: none ;font-size: 14px; font-family: 'Inter', sans-serif;"
+            <a href="#" class="me-3" style="text-decoration: none ;font-size: 14px; color: #475569 !important;"
               >Feedback</a
             >
-            <a href="#" class="text-black-50 me-3" style="text-decoration: none ; font-size: 14px; font-family: 'Inter', sans-serif;"
+            <a href="#" class="me-3" style="text-decoration: none ; font-size: 14px; color: #475569 !important;"
               >Support</a
             >
           </div>

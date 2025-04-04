@@ -1,89 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 *, :after, :before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: #f1f5f9 !important;
-    padding-right: 6px;
-    font-family: 'Inter',sans-serif;
-
-  }
-
-
-  
-  .browse-courses-btn {
-    font-weight: 500;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    padding: 8px 16px;
-    width: 144.67px;
-    height: 40px;
+  background-color: #f1f5f9 !important;
+  padding-right: 6px;
+  font-family: 'Inter',sans-serif !important;
 }
 
-.instructor-btn {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 8px 16px;
-    width: 164.34px;
-    height: 40px;
-}
 
 
 .navbar-search input::placeholder {
-  font-size: 16px; /* Set placeholder font size */
-  color: #6c757d; /* Optional: Adjust placeholder color */
+font-size: 14px; /* Set placeholder font size */
+color: #6c757d; /* Optional: Adjust placeholder color */
 }
-  .dropdown-toggle::after {
-    display: none !important;
-  }
+.dropdown-toggle::after {
+  display: none !important;
+}
 
-  .input-group input.form-control {
-    border-left: none !important;
-  }
-  .cardscont{
-    padding-top:88px ;
-  }
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+.input-group input.form-control {
+  border-left: none !important;
+}
+.cardscont{
+  padding-top:88px ;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .card img {
-    border-radius: 12px 12px 0 0;
-  }
+.card img {
+  border-radius: 12px 12px 0 0;
+}
 
-  .card-body {
-    padding: 20px;
-  }
+.card-body {
+  padding: 20px;
+}
 
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
-  .card-text {
-    color: #6c757d;
-  }
+.card-text {
+  color: #6c757d;
+}
 
-  .rating {
-    color: #ffc107;
-  }
+.rating {
+  color: #ffc107;
+}
 
-  .price {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
-  .original-price {
-    text-decoration: line-through;
-    color: #6c757d;
-  }
- 
+.original-price {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
 .card:hover {
 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -101,9 +81,9 @@ overflow: hidden;
 
 
 .dropdown-item:hover {
-    color: #724ffe !important;
-    background-color: white !important;
-  }
+  color: #724ffe !important;
+  background-color: white !important;
+}
 
 .lead{
 font-size: 1.25rem;
@@ -111,26 +91,26 @@ font-weight: 500;
 letter-spacing: -.03rem;
 }
 .search-icon {
-    z-index: 2;
-    color: #6c757d;
-  }
+  z-index: 2;
+  color: #6c757d;
+}
 
-  .ps-6 {
-    padding-left: 2.5rem !important;
-  }
+.ps-6 {
+  padding-left: 2.5rem !important;
+}
 
- 
-  .fw-semi-bold {
-    font-weight: 600 !important;
+
+.fw-semi-bold {
+  font-weight: 600 !important;
 }
 
 .cardstop{
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-    margin:0 8px 22px 8px;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -.022rem;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  margin:0 8px 22px 8px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -.022rem;
 }
 
 
@@ -138,183 +118,183 @@ letter-spacing: -.03rem;
 
 
 .dropdown-menu .dropdown-submenu {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-menu .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: 0.1rem;
-    display: none;
-    position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  display: none;
+  position: absolute;
 }
 
 .dropdown-menu .dropdown-submenu:hover .dropdown-menu {
-    display: block;
-    
+  display: block;
+  
 }
 
 .hero-section{
-    width: 100%; 
-    background-color: #724ffe; 
-    display: flex;
-    letter-spacing: -.05rem;
-    color: white;
+  width: 100%; 
+  background-color: #724ffe; 
+  display: flex;
+  letter-spacing: -.05rem;
+  color: white;
 }
 .cardname{
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .navbar-light {
-    box-shadow: 0 1px 3px #11182717;
+  box-shadow: 0 1px 3px #11182717;
 }
 
 .linksnav{
-    font-family: Inter,sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #1E293B;
-    padding: 5px 5.6px;
+  font-family: Inter,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1E293B;
+  padding: 5px 5.6px;
 }
 
 .inputnav{
-    padding-left: 2.5rem;
-    padding: 8px 16px 8px 40px;
+  padding-left: 2.5rem;
+  padding: 8px 16px 8px 40px;
 
 }
 
 .inputform:hover{
-    border: 1px colid purple;
+  border: 1px colid purple;
 }
 
 .dropdown-item:hover{
-    color: #724ffe;
+  color: #724ffe;
 
 }
 
 .topheading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30vw;
-    margin-right: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  margin-right: 18vw;
 }
 
 .paratop{
-    color: rgb(180, 179, 179);
+  color: rgb(180, 179, 179);
 }
 
 .icon{
-    border-radius: 50%;
-    background-color: antiquewhite;
-    height: 48px;
-    width: 48px;  
+  border-radius: 50%;
+  background-color: antiquewhite;
+  height: 48px;
+  width: 48px;  
 }
 .iconnav{
-    border-radius: 50%;
-    background-color: #f1f5f9;
-    height: 50px;
-    width: 50px;  
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  height: 48px;
+  width: 48px;  
 }
 
 .smallins{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .cardcont{
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
-  
+
 body::-webkit-scrollbar {
-  display: none; 
+display: none; 
 }
 
 body{
-  background-color: #F1F5F9;
+background-color: #F1F5F9;
 }
 
 .btn-scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: opacity 0.3s ease-in-out;
+opacity: 0;
+visibility: hidden;
 }
 
 
 .btn-scroll-top.active {
-  opacity: 1;
-  visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 /* Progress bar effect */
 .progress-square path {
-  fill: none;
-  stroke: #754ffe;
-  stroke-width: 2;
-  transition: stroke-dashoffset 0.2s linear;
+fill: none;
+stroke: #754ffe;
+stroke-width: 2;
+transition: stroke-dashoffset 0.2s linear;
 }
 
 /* Icon inside button */
 .btn-scroll-top:after {
-  content: "\f102"; /* Bootstrap arrow up icon */
-  font-family: "bootstrap-icons";
-  font-size: 24px;
-  position: absolute;
-  color: #754ffe;
+content: "\f102"; /* Bootstrap arrow up icon */
+font-family: "bootstrap-icons";
+font-size: 24px;
+position: absolute;
+color: #754ffe;
 }
+
 
 
 .footer {
-  background-color: transparent;
-  margin-top: 60px;
+background-color: transparent;
 }
 
 .footer .container {
-  padding: 1rem;
+padding: 1rem;
 }
 
 .footer .border-top {
-  border-top: 1px solid var(--geeks-border-color);
+border-top: 1px solid var(--geeks-border-color);
 }
 
 .footer .py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
 }
 
 .footer .text-center {
-  text-align: center;
+text-align: center;
 }
 
 .footer .text-md-start {
-  text-align: left;
+text-align: left;
 }
 
 .footer .nav-footer {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+display: flex;
+justify-content: center;
+gap: 1rem;
 }
 
 .footer .nav-link {
-  color: var(--geeks-body-color);
-  text-decoration: none;
-  transition: color 0.3s;
+color: var(--geeks-body-color);
+text-decoration: none;
+transition: color 0.3s;
 }
 
 .footer .nav-link:hover {
-  color: var(--geeks-primary);
+color: var(--geeks-primary);
 }
