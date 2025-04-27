@@ -406,6 +406,11 @@ body::-webkit-scrollbar {
   letter-spacing: -.022rem !important;
   font-weight: 600 !important;
 }
+.bookmark-icon{
+  color: #724ffe !important;
+  height: 14px !important;
+  width: 14px !important;
+}
 
 .card-text-custom {
   font-family: 'Inter', sans-serif !important;
