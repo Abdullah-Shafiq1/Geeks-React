@@ -1,0 +1,196 @@
+.navbar-container {
+    padding: 0 0 0 8px !important;
+  }
+  
+  .navbar-brand {
+    height: 36.09px;
+    margin: 0 16px 0 0; 
+    padding: 0;
+    padding-top: 2px !important;
+  }
+  
+  .navbar-search input::placeholder {
+    font-size: 14px; 
+    color: #6c757d; 
+  }
+  
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  
+  .no-dropdown-arrow{
+    line-height: 0;
+    font-size: 24px;
+    transform: translate(-2px,3px);
+    letter-spacing: 0.02rem !important;
+    font-weight: 800 !important;
+  }
+  
+  .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+  
+  .linksnav {
+    font-family: Inter, sans-serif;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: #1E293B !important;
+    padding: 5px 5.6px !important;
+    height: 32.39px;
+    margin-right: 0.18rem;
+  }
+    .nav-icon-chevron {
+      margin-left: 0.3rem;
+      font-size: 0.66rem;
+      opacity: 0.85;
+      font-weight: 600 !important;
+  }
+
+  .bi-circle-half{
+    transform: translateY(-1px);
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .more-dropdown {
+    height: 25px;
+    width: 35.39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .more-dropdown i {
+    font-size: 14px;
+  }
+  
+  .dropdown-item:hover {
+    color: #724ffe !important;
+    background-color: rgb(240, 247, 252) !important;
+  }
+  
+  .dropdown-menu .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-menu .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.1rem;
+    display: none;
+    position: absolute;
+  }
+  
+  .dropdown-menu .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar-light {
+    box-shadow: 0 1px 3px #11182717;
+  }
+   
+  #formSearch {
+    height: 40.39px;
+    width: 249px;
+    padding: 8px 16px 8px 40px;
+    border: 1px solid #cbd5e1;
+    margin-left: 2px;
+  }
+  .searchicon{
+     height: 14px !important;
+     width: 14px !important;
+     opacity: 0.6;   
+     transform: translate(2px,-3px);
+    
+  }
+  .col-sm-12{
+    width: 100% !important;
+  }
+  
+  .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .form-control:focus {
+    border-color: #724ffe !important;
+    box-shadow: 0 0 3px #724ffe !important;
+  }
+  .form-control::placeholder{
+    transform: translateY(-1px);
+  }
+  
+  .inputform:hover .searchinput {
+    border-color: #724ffe;
+    box-shadow: 0 0 5px rgba(123, 91, 236, 0.5);
+  }
+
+  .browse-link {
+    width: 83.23px !important;
+  }
+  
+  .landings-link {
+    width: 94.3px !important;
+  }
+  
+  .pages-link {
+    width: 74.5px !important;
+  }
+  
+  .accounts-link {
+    width: 96.66px !important;
+  }
+
+  .dropdown-header{
+    font-size: .6875rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+    margin-bottom: .24rem !important;
+    text-transform: uppercase !important;
+    color: #64748b !important;
+    padding: .25rem 1.2rem !important;
+  }
+
+  .navbar .dropdown-menu {
+    border: none !important;
+    border-radius: .5rem !important;
+    box-shadow: 0 10px 30px 0 #1f2d3d1a !important;
+    color: #1e293b !important;
+    font-size: .875rem !important;
+    line-height: 1.2rem !important;
+    margin: 0.75rem 0 !important;
+    min-width: 12rem !important;
+    padding: 0.90rem 0 !important;
+}
+.dropdown-item{
+  padding-left: 19px !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 5px !important;
+  letter-spacing: 0.05px;
+  line-height: 1.2rem !important;
+}
+
+hr{
+  margin: 19px 0 !important;
+}
+
+.dropdown-item-hr{
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+.pagetop{
+  margin-top: 3px !important;
+}
+.btn-icon {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+}

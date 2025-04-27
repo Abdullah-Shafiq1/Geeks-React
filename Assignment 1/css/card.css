@@ -1,0 +1,149 @@
+.cardscont {
+    padding-top: 88px !important;
+    overflow: hidden !important;
+  }
+  
+  .bookmark-icon{
+    color: #724ffe !important;
+    height: 14px !important;
+    width: 14px !important;
+  }
+  .mt-n1{
+    margin-top: -5px !important;
+    margin-left: -4px !important;
+  }
+  
+  .mt-n2{
+    margin-top: -1px !important;
+  }
+  .cardstop {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 8px 22px 8px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -.022rem;
+    color: #1e293b;
+  }
+  
+  .card {
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0px !important;
+    margin-top: 0px !important;
+  }
+  .px-lg-2{
+    padding: 10px !important;
+    padding-top: 0px !important;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .card img {
+    border-radius: 7px 7px 0 0;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 24px !important;
+    padding-bottom: 20px !important;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #1e293b;
+    letter-spacing: -.022rem;
+  }
+  
+  .course-meta {
+    font-family: 'Inter', sans-serif;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .text-warning{
+    color: #f59e0b !important;
+  }
+  
+  p {
+    margin-bottom: 0 !important;
+  }
+  
+  .course-meta i.fa-signal {
+    margin-left: 8px;
+  }
+  
+  .rating {
+    color: #f59e0b;
+    font-size: 17px;
+  }
+  
+  
+  .rating-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transform: translate();
+  }
+  
+  .rating-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 1px;
+  }
+  
+  .price-container {
+    margin: 7px 0 0 0 !important;
+  }
+  
+  .price {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #1e293b;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #64748b;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    margin-left:-0.5px !important ;
+  }
+  
+  .card-footer {
+    padding: 16px 24px !important;
+    border-top: 1px solid #e2e8f0 !important;
+    background-color: white !important;
+  }
+  
+  .instructor-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .instructor-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #64748b;
+  }
+  
+  .fa-bookmark {
+    cursor: pointer;
+    color: #64748b;
+  }
+  
+  .fa-bookmark:hover {
+    color: #f39c12;
+  }
+  
+  .card-row {
+    transition: transform 0.5s ease;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
