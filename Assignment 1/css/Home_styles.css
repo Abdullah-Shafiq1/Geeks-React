@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
 .hero-icons{
   margin-bottom: 34px !important;
   font-size: 14px;
-  letter-spacing: 0.01rem !important;
+  letter-spacing: 0rem !important;
 }
 
 .bookmark-link {
@@ -94,7 +94,6 @@ body::-webkit-scrollbar {
 .bookmark-icon{
    width: 14px;
    height: 14px;
-   margin-right: 8px;
 }
 .other-icon{
   width: 14px;
@@ -149,6 +148,17 @@ body::-webkit-scrollbar {
 
 .mt-n8 {
   margin-top: -3.5rem !important;
+}
+
+.mt-n1{
+  margin-top: -5px !important;
+  margin-left: -4px !important;
+}
+.mt-n2 {
+  margin-top: -0.8px !important;
+}
+.mt-svg-1{
+  margin-top: 2px !important;
 }
 .nav-lb-tab .nav-item {
   margin: 0 1.5rem !important;
@@ -385,7 +395,7 @@ body::-webkit-scrollbar {
 /* Related Courses Section */
 .related-courses-section {
   padding: 88px 0 16px !important;
-  margin-bottom: 73px !important;
+  margin-bottom: 73.8px !important;
 }
 
 .section-title {
@@ -405,11 +415,6 @@ body::-webkit-scrollbar {
   color: #1e293b !important;
   letter-spacing: -.022rem !important;
   font-weight: 600 !important;
-}
-.bookmark-icon{
-  color: #724ffe !important;
-  height: 14px !important;
-  width: 14px !important;
 }
 
 .card-text-custom {
