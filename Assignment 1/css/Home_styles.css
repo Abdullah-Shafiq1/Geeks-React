@@ -98,6 +98,7 @@ body::-webkit-scrollbar {
 .other-icon{
   width: 14px;
   height: 14px;
+  margin-top: -1px !important;
 }
 
 .star-rating {
