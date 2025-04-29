@@ -253,10 +253,19 @@ p {
 .carousel-control {
   z-index: 1;
   margin-left: 20px;
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
+}
+.top-65 {
+  top: 66% !important;  
+}
+.end-5{
+  right: 5% !important;
 }
 
+.start-5{
+  left: 4% !important;
+}
 .carousel-control-mobile {
   width: 50px;
   height: 50px;
